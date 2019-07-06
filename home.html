@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> The Great RGB Color Guessing Game </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script> <!-- jQuery -->
+	<link rel="stylesheet" href="vendor/bootstrap.css"> <!-- bootstrap4 css -->
+	<link rel="stylesheet" href="css/1.css">
+	<!-- Fontawesome and other font -->
+	<link rel="stylesheet" href="vendor/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">	
+</head>
+<body>
+<h1>The Great Color<span id="colorDisplay"><br>
+RGB</span> 
+guessing game
+</h1> 
+<div id="stripe">
+	<button type="button" class="btn btn-primary" id="resetButton">New Colors</button> <!-- nut reset -->
+	<span id="message"></span> <!-- message = try again hoac la correct -->
+	<button type="button" id="easyBtn" class="btn btn-primary">EASY</button> <!-- easy button -->
+	<button type="button" id="hardBtn" class="btn btn-primary selected">HARD</button> <!-- hard button -->
+</div>
+
+
+<div id="container">
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+</div>
+
+
+<script type="text/javascript" src="js/1.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- //ta dùng function changeColor đổi màu của các square thành màu vừa Click, clickedColor = color trong ftion
+function changeColor(color){
+	for (var i = 0; i < square.length; i++) {
+		square[i].style.backgroundColor = color;
+		//truyền vào màu clickedColor cho function này, và dùng ở bên trên 
+	}
+}
+//bây giờ chúng ta muốn màu được chọn là 1 màu ngẫu nhiên trong 6 màu của colors = [6mau];
+//=> chúng ta sẽ đặt pickedColor = function pickColor();
+
+function pickColor(){
+	var random = Math.floor(Math.random()* colors.length);
+	return colors[random];
+}
+// Bây giờ chúng ta muốn các màu trong colors phải là các màu ngẫu nhiên =>
+// đặt colors = function generateRandomColor(số màu muốn có trong đó); vì colors = 1 mảng màu => 
+// generateRandomColor phải trả về một mảng màu
+function generateRandomColor(num){
+	//trả về mảng nên tạo mảng rỗng ban đầu
+	var arr = [];
+	//code logic ở đây
+	// num là số lẩn thực hiện vòng lặp và là số màu ta muốn đẩy vào mảng
+	// => mỗi lần vòng lặp chạy thì arr.push sẽ được đẩy 1 màu ngẫu nhiên vào đó , sau 6 lần chạy thì sẽ có
+	// 6 màu
+	for (var i = 0; i < num i++) {
+		arr.push(randomColor());
+	}
+	//=> để mỗi lần thực hiện vòng lặp có thể trả về 1 màu random thì chúng ta phải viết function
+	// thực hiện việc đó
+	//gọi function đó là randomColor();
+	// trả về mảng
+	return arr;
+
+}
+function randomColor(){
+	var r = Math.floor(Math.random()* 256);
+	var g = Math.floor(Math.random()* 256);
+	var b = Math.floor(Math.random()* 256);
+	return "rgb(" + r + ", " + g + ", " + b + ")";
+}
+ -->
+
